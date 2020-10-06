@@ -1,10 +1,11 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
+  font-family: 'Baloo Da 2', cursive;
   background-color: #fff;
 }
 
@@ -18,12 +19,152 @@ ul {
 
 footer {
   background-color: #353745;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .f-logo {
   color: #ffffff;
-  font-family: 'Baloo Da 2', cursive;
   letter-spacing: 2px;
   padding: 5px 10px;
   font-size: 25px;
+}
+
+.up-section,
+.down-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 0px;
+  margin: 5px;
+  width: 80%;
+  flex-wrap: wrap;
+}
+
+.up-section {
+  border-bottom: 1px solid #545562;
+}
+
+.up-section ul,
+.down-section ul {
+  padding: 0px 20px;
+}
+
+.up-section ul li a:hover,
+.down-section ul li a:hover {
+  opacity: 0.7;
+}
+
+.up-section h1,
+.down-section h1 {
+  color: #ffffff;
+  opacity: 0.7;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.up-section ul li a,
+.down-section ul li a {
+  font-size: 16px;
+  color: #ffffff;
+  opacity: 0.3;
+  line-height: 10px;
+  font-weight: 300;
+}
+
+.contact p {
+  color: #ffffff;
+  opacity: 0.3;
+}
+
+.social-icons a {
+  width: 35px;
+  height: 35px;
+  margin: 0px 5px;
+  background-color: #424356;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+}
+
+/* .social-icons a {
+  transition: background-color 0.5s;
+} */
+.search input {
+  height: 35px;
+  width: 200px;
+  padding-left: 7px;
+  border: none;
+  outline: none;
+}
+
+.social-icons i {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.social-icons a:hover {
+  background-color: #9a9ff6;
+  transition: background-color 0.5s;
+}
+
+.social-icons a:hover i {
+  color: #424356;
+}
+
+.copyright {
+  font-size: 14px;
+  color: #ffffff;
+  opacity: 0.4;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+  .search {
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .search h1 {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 720px) {
+  .up-section,
+  .down-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .up-section ul h1,
+  .down-section ul h1 {
+    font-size: 25px;
+  }
+
+  .up-section ul li,
+  .down-section ul li {
+    text-align: center;
+    margin: 10px;
+  }
+
+  .up-section ul li a,
+  .down-section ul li a {
+    font-size: 20px;
+  }
+
+  .f-logo {
+    border: 1px solid #545562;
+    margin-bottom: 20px;
+  }
 }

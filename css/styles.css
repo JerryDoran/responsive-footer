@@ -9,6 +9,15 @@ body {
   background-color: #fff;
 }
 
+main {
+  width: 90vw;
+  margin: 0 auto;
+  padding: 30px 20px;
+
+  /* sticky footer at bottom subtract height of navbar and height of footer from the main section */
+  min-height: calc(100vh - 40px - 550px);
+}
+
 a {
   text-decoration: none;
 }

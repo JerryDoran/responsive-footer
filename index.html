@@ -17,6 +17,29 @@
     <title>Responsive Footer</title>
   </head>
   <body>
+    <header>
+      <nav>
+        <h1>Hey</h1>
+      </nav>
+    </header>
+
+    <main>
+      <h3>Next section</h3>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, natus,
+        obcaecati alias nisi voluptatem quibusdam enim sint asperiores incidunt,
+        corrupti laudantium distinctio est similique dicta nesciunt fuga neque
+        qui delectus.
+      </p>
+      <h3>Next section</h3>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, natus,
+        obcaecati alias nisi voluptatem quibusdam enim sint asperiores incidunt,
+        corrupti laudantium distinctio est similique dicta nesciunt fuga neque
+        qui delectus.
+      </p>
+    </main>
+
     <!-- footer--------------------------------------------------------->
     <footer>
       <!-- up-section -->
@@ -82,7 +105,12 @@
         </div>
       </div>
       <!-- copyright -->
-      <p class="copyright">Doran Software &copy; 2020</p>
+      <p class="copyright">
+        Doran Software &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+      </p>
     </footer>
   </body>
 </html>
